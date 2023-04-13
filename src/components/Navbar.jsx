@@ -10,6 +10,11 @@ const Container = styled.div`
 `;
 const Links = styled.div``;
 const Icons = styled.div``;
+const Icon = styled.img``;
+const Logo = styled.img``;
+const List = styled.ul``;
+const ListItem = styled.li``;
+const Button = styled.button``;
 export const Navbar = () => {
   return (
     <Section>
@@ -23,7 +28,10 @@ export const Navbar = () => {
             <ListItem>Contact</ListItem>
           </List>
         </Links>
-        <Icons></Icons>
+        <Icons>
+            <Icon src=""/>
+            <Button>Hire Now</Button>
+        </Icons>
       </Container>
     </Section>
   );

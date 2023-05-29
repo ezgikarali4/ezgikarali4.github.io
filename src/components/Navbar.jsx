@@ -6,14 +6,43 @@ const Section = styled.div`
 `;
 const Container = styled.div`
   width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;
-const Links = styled.div``;
-const Icons = styled.div``;
-const Icon = styled.img``;
-const Logo = styled.img``;
-const List = styled.ul``;
-const ListItem = styled.li``;
-const Button = styled.button``;
+const Links = styled.div`
+  display: flex;
+  align-items: center;
+`;
+const Icons = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 20px;
+`;
+const Icon = styled.img`
+  width: 20px;
+  cursor: pointer;
+`;
+const Logo = styled.img`
+  height: 200px;
+`;
+const List = styled.ul`
+  display: flex;
+  gap: 20px;
+  list-style: none;
+`;
+const ListItem = styled.li`
+  cursor: pointer;
+`;
+const Button = styled.button`
+  width: 100px;
+  padding: 10px;
+  background-color: #da4ea2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+`;
 export const Navbar = () => {
   return (
     <Section>
@@ -28,8 +57,8 @@ export const Navbar = () => {
           </List>
         </Links>
         <Icons>
-            <Icon src=""/>
-            <Button>Hire Now</Button>
+          <Icon src="./img/search.svg" />
+          <Button>Hire Now</Button>
         </Icons>
       </Container>
     </Section>

@@ -58,7 +58,7 @@ export const Navbar = () => {
         </Links>
         <Icons>
           <Icon src="./img/search.svg" />
-          <Button>Hire Now</Button>
+          <Button>Hire</Button>
         </Icons>
       </Container>
     </Section>
